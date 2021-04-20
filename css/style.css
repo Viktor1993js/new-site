@@ -1,3 +1,16 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- teb-land
+-big-desktop
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -36,6 +49,18 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
+  @media (min-width: 112em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -428,7 +453,10 @@ body {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: table;
-    overflow: hidden; }
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .5s .2s; }
   .popup__left {
     height: 100%;
     width: 33.333333%;
@@ -452,6 +480,9 @@ body {
   .popup:target {
     opacity: 1;
     visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
   .popup__close:link, .popup__close:visited {
     color: #777;
     text-decoration: none;
