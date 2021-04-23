@@ -72,8 +72,8 @@
             text-decoration: none;
             font-size: 3rem;
             position: absolute;
-            top: 2.5rem;
-            right: 2.5rem;
+            top: 1rem;
+            right: 1.5rem;
             display: inline-block;
             transition: all .2s;
         }
@@ -85,39 +85,40 @@
 
     @include respond(tab-land) {
         &__text {
-            margin-bottom: 2rem;
-            column-count: 1;
+            display: inline-block;
             padding: 0;
-            display: table;
+            margin: 1rem;
         }
 
         &__img {
-            width: 49%;
+            width: 50%;
             display: inline-block;
+            padding: 0;
+            border: none;
 
         }
 
         &__left {
-            height: 100%;
-            width: 33.333333%;
-            display: table;
+            width: 100%;
+            display: flex;
+            padding: 0;
         }
 
         &__right {
             width: 100%;
-            display: table;
+            display: inline-block;
             padding: 2rem;
-            vertical-align: bottom;
+        }
+
+        &__close {
+
+            &:link,
+            &:visited {
+                color: $color-white;
+                top: 1rem;
+                right: 1.5rem;
+            }
         }
 
     }
-
-    @include respond(tab-port) {
-        &__text {
-            margin-bottom: 1rem;
-        }
-    }
-
-
-    @include respond(phone) {}
 }

@@ -572,33 +572,34 @@ body {
     text-decoration: none;
     font-size: 3rem;
     position: absolute;
-    top: 2.5rem;
-    right: 2.5rem;
+    top: 1rem;
+    right: 1.5rem;
     display: inline-block;
     transition: all .2s; }
   .popup__close:hover {
     color: #55c57a; }
   @media (max-width: 75em) {
     .popup__text {
-      margin-bottom: 2rem;
-      column-count: 1;
+      display: inline-block;
       padding: 0;
-      display: table; }
+      margin: 1rem; }
     .popup__img {
-      width: 49%;
-      display: inline-block; }
+      width: 50%;
+      display: inline-block;
+      padding: 0;
+      border: none; }
     .popup__left {
-      height: 100%;
-      width: 33.333333%;
-      display: table; }
+      width: 100%;
+      display: flex;
+      padding: 0; }
     .popup__right {
       width: 100%;
-      display: table;
-      padding: 2rem;
-      vertical-align: bottom; } }
-  @media (max-width: 56.25em) {
-    .popup__text {
-      margin-bottom: 1rem; } }
+      display: inline-block;
+      padding: 2rem; }
+    .popup__close:link, .popup__close:visited {
+      color: #fff;
+      top: 1rem;
+      right: 1.5rem; } }
 
 .story {
   width: 75%;
@@ -931,8 +932,7 @@ body {
 .section-tours {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
-  margin-top: -10rem;
-  transition: all 5s; }
+  margin-top: -10rem; }
   @media (max-width: 56.25em) {
     .section-tours {
       padding: 20rem 0 10rem 0; } }
