@@ -558,6 +558,7 @@ body {
     vertical-align: middle; }
   .popup__img {
     width: 100%;
+    height: auto;
     display: block; }
   .popup__text {
     font-size: 1.4rem;
