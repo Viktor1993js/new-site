@@ -605,28 +605,18 @@ body {
     color: #55c57a; }
   @media only screen and (max-width: 75em) {
     .popup__text {
-      display: inline-block;
       padding: 0;
       margin: 1rem;
       line-height: 1.5; }
     .popup__img {
-      height: 15rem; }
-    .popup__close:link, .popup__close:visited {
-      color: #fff;
-      top: 1rem;
-      right: 1.5rem; } }
+      height: 15rem; } }
   @media only screen and (max-width: 37.5em) {
     .popup__text {
-      display: inline-block;
       padding: 0;
       margin: 1rem;
       line-height: 1.2; }
     .popup__img {
-      height: 15rem; }
-    .popup__close:link, .popup__close:visited {
-      color: #fff;
-      top: 1rem;
-      right: 1.5rem; } }
+      height: 15rem; } }
 
 .story {
   width: 75%;

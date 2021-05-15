@@ -107,7 +107,6 @@
 
     @include respond(tab-land) {
         &__text {
-            display: inline-block;
             padding: 0;
             margin: 1rem;
             line-height: 1.5;
@@ -117,24 +116,12 @@
             height: 15rem;
 
         }
-
-        &__close {
-
-            &:link,
-            &:visited {
-                color: $color-white;
-                top: 1rem;
-                right: 1.5rem;
-            }
-        }
-
     }
 
     @include respond(phone) {
         
 
         &__text {
-            display: inline-block;
             padding: 0;
             margin: 1rem;
             line-height: 1.2;
@@ -144,16 +131,5 @@
             height: 15rem;
 
         }
-
-        &__close {
-
-            &:link,
-            &:visited {
-                color: $color-white;
-                top: 1rem;
-                right: 1.5rem;
-            }
-        }
-
     }
 }
