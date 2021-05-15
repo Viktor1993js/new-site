@@ -34,6 +34,7 @@
         height: 40%;
         width: 33.333333%;
         display: table-cell;
+        position: relative;
     }
 
     &__right {
@@ -96,14 +97,14 @@
 
         &__img {
             width: 50%;
-            height: 50%;
+            height: auto;
             display: inline-block;
             padding: 0;
             border: none;
         }
 
         &__left {
-            height: 50%;
+            height: 100%;
             width: 100%;
             display: flex;
             padding: 0;
@@ -112,7 +113,7 @@
         &__right {
             width: 100%;
             display: inline-block;
-            padding: 2rem;
+            padding: 1rem;
         }
 
         &__close {
@@ -125,5 +126,11 @@
             }
         }
 
+    }
+
+    @include respond(phone) {
+        &__text {
+           line-height: 1.3;
+        }
     }
 }
