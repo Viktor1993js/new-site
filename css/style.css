@@ -548,6 +548,8 @@ body {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 80%;
     overflow: hidden;
@@ -614,22 +616,6 @@ body {
       top: 1rem;
       right: 1.5rem; } }
   @media only screen and (max-width: 37.5em) {
-    .popup__content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #fff;
-      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-      border-radius: 3px;
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      overflow: hidden;
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(0.25);
-      transition: all .5s .2s;
-      position: relative; }
     .popup__text {
       display: inline-block;
       padding: 0;

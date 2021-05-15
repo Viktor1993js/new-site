@@ -22,6 +22,8 @@
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
         border-radius: 3px;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         width: 80%;
         overflow: hidden;
@@ -129,23 +131,7 @@
     }
 
     @include respond(phone) {
-        &__content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: $color-white;
-            box-shadow: 0 2rem 4rem rgba($color-black, .2);
-            border-radius: 3px;
-            display: flex;
-            flex-direction: column;
-            width: 80%;
-            overflow: hidden;
-            opacity: 0;
-            transform: translate(-50%, -50%) scale(.25);
-            transition: all .5s .2s;
-            position: relative;
-        }
+        
 
         &__text {
             display: inline-block;
